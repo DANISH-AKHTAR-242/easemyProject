@@ -22,16 +22,23 @@ It still need lot of work.
     cd easemyProject
     npm install
     ```
+3. Create a `.env` file in the project root with:
+    ```bash
+    MONGO_URI=<your_mongodb_connection_string>
+    PORT=3000
+    CORS_ORIGIN=http://localhost:5173
+    ```
 
 ## Usage
 
-Start the development server:
+Start the server:
 
 ```bash
 npm start
 ```
 
-Open your browser and navigate to `http://localhost:3000`.
+API base URL: `http://localhost:3000`  
+Health check: `http://localhost:3000/api/v1/healthCheck`
 
 ## Contributing
 
